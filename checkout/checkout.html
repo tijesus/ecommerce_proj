@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - FashionStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="checkout.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">FashionStore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./men/men.html">Men</a></li>
+                <li><a href="./women/women.html">Women</a></li>
+                <li><a href="./kids/kids.html">Kid</a></li>
+                <li><a href="./login/login.html">Login</a></li>
+                <li><a href="./cart/cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <h1>Checkout</h1>
+            <div class="checkout-container">
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div id="cart-items"></div>
+                    <div class="order-total">
+                        <p>Total Items: <span id="total-items">0</span></p>
+                        <p>Total Price: $<span id="total-price">0.00</span></p>
+                    </div>
+                </div>
+
+                <!-- Shipping Information -->
+                <div class="shipping-info">
+                    <h2>Shipping Information</h2>
+                    <form id="checkout-form">
+                        <div class="form-group">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" required>
+                            <span class="error-message" id="first-name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" required>
+                            <span class="error-message" id="last-name-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" required>
+                            <span class="error-message" id="address-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" required>
+                            <span class="error-message" id="city-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" required>
+                            <span class="error-message" id="state-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="zip">ZIP Code</label>
+                            <input type="text" id="zip" required>
+                            <span class="error-message" id="zip-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" required>
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+                        <button type="submit" class="btn proceed-btn">Proceed to Payment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FashionStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

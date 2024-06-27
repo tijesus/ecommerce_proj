@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - FashionStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">FashionStore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./men/men.html">Men</a></li>
+                <li><a href="./women/women.html">Women</a></li>
+                <li><a href="./kids/kids.html">Kid</a></li>
+                <li><a href="./login/login.html">Login</a></li>
+                <li><a href="./cart/cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Create Account Section -->
+    <section class="create-account-section">
+        <div class="container">
+            <div class="create-account-box">
+                <h2>Create Account</h2>
+                <form id="create-account-form" action="success.html" method="post">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <span class="error-message" id="first-name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <span class="error-message" id="last-name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" required>
+                        <span class="error-message" id="password-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <span class="error-message" id="confirm-password-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="text" id="phone" name="phone" required>
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    <a href="../create_success/create_success.html"><button type="submit" class="btn">Create Account</button></a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FashionStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

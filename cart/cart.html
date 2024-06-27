@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - FashionStore</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="cart.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">FashionStore</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./men/men.html">Men</a></li>
+                <li><a href="./women/women.html">Women</a></li>
+                <li><a href="./kids/kids.html">Kid</a></li>
+                <li><a href="./login/login.html">Login</a></li>
+                <li><a href="./cart/cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div class="cart-items">
+                <!-- Example of a cart item -->
+                <div class="cart-item">
+                    <img src="https://via.placeholder.com/150" alt="Product Image">
+                    <div class="cart-item-details">
+                        <h3>Product Name</h3>
+                        <p>Price: $50</p>
+                        <div class="cart-item-quantity">
+                            <button class="decrease-btn">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="increase-btn">+</button>
+                        </div>
+                    </div>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+            <div class="cart-summary">
+                <p>Total Items: <span id="total-items">1</span></p>
+                <p>Total Price: $<span id="total-price">50</span></p>
+                <button class="btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 FashionStore. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
